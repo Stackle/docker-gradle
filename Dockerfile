@@ -6,7 +6,7 @@ RUN rm -rf /etc/Dockerfile
 ADD Dockerfile /etc/Dockerfile
 
 # Gradle
-ENV GRADLE_VERSION 2.10
+ENV GRADLE_VERSION 2.9
 WORKDIR /usr/bin
 RUN wget https://downloads.gradle.org/distributions/gradle-${GRADLE_VERSION}-all.zip && \
     unzip gradle-${GRADLE_VERSION}-all.zip && \
